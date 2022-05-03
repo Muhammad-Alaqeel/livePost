@@ -1,0 +1,24 @@
+.full{
+    margin-top:10% ;
+}
+button{
+    margin-top: 23px;
+    min-width: 100px;
+}
+.space{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+h3{
+
+    margin-bottom: 15px;
+}
+.su{
+
+    margin-top: 15px;
+}
+textarea.ng-invalid.ng-touched 
+,input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}

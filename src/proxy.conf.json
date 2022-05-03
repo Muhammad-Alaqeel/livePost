@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://live-posts-cb4d8-default-rtdb.firebaseio.com/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

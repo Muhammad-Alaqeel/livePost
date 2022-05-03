@@ -1,0 +1,22 @@
+<div class="col-sm-8 offset-sm-2  full">
+    <h3 *ngIf="!editMode">Add Post</h3>
+    <h3 *ngIf="editMode">Edit post</h3>
+    <form [formGroup]="form" (ngSubmit)="add()">
+    <label for="n1">Title</label>
+
+<input class="form-control form-control-lg" formControlName="title" id="n1" type="text" placeholder="Title">
+<div class="form-group">
+    <label class="su" for="n2">Description</label>
+
+    <textarea class="form-control" placeholder="Description" formControlName="desc" id="n2" rows="3"></textarea>
+  </div>
+  <label for="n3" >Image Path</label>
+
+  <input class="form-control form-control-sm" type="text" id="n3" formControlName="imgPath" placeholder="Image Path">
+  <img class="img-responsive" style="margin-top: 20px; max-width: 200px;" src="{{form.value.imgPath}}" />
+ <div class="space"> 
+  <button type="submit" [disabled]="form.invalid" class="btn btn-outline-primary">Add</button>
+  <button type="reset"  class="btn btn-outline-secondary">Clear</button>
+</div>
+</form>
+</div>

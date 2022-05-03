@@ -1,0 +1,13 @@
+p{
+
+    font-size:large;
+}
+.buttonDiv
+button{
+  
+    margin: 5px;
+    max-width: 150px;
+}
+.whole{
+    margin: 5%;
+}
